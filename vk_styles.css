@@ -1,0 +1,49 @@
+body, .ts_input, .ts_input:focus  {
+    background-color: #121212 !important;
+}
+.left_label, .left_icon, .wall_reply_text, .im-mess--text,
+.input_back_content, .wall_post_text {
+    color: #D7D7D7 !important;
+}
+.page_block {
+    background: #1C1C1C !important;
+    box-shadow: unset !important;
+}
+.back {
+    background-color: #232323 !important;
+    border: unset !important;
+}
+#post_field, #submit_post, .page_media_link_desc_wrap {
+    background: #1C1C1C !important;
+}
+.page_media_thumbed_link {
+    border: 1px solid #121212 !important;
+}
+.left_count_wrap {
+    background: #2E2E2E !important;
+    color: #686868 !important;
+}
+.left_row:hover {
+    background: #4C4C4C !important;
+}
+.ui_search {
+    background: #1C1C1C !important;
+}
+#side_bar .more_div, .nim-dialog .nim-dialog--content, .friends_user_row {
+    border-top: 1px solid #2E2E2E !important;
+}
+.ui_search {
+    border-bottom: 1px solid #2E2E2E !important;
+}
+.friends_user_row:first-child {
+    border-top: none !important;
+}
+.im-page .im-page--history {
+    border-left: 1px solid #2E2E2E;
+    margin-left: 316px !important;
+}
+.nim-dialog:not(.nim-dialog_deleted).nim-dialog_hovered, 
+.nim-dialog:not(.nim-dialog_deleted).nim-dialog_unread.nim-dialog_classic, 
+.nim-dialog:not(.nim-dialog_deleted):hover {
+    background: #474747 !important;
+}
