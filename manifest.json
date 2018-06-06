@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Dark theme for vk.com",
+    "description": "You can change original theme by dark theme",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "matches": ["*://vk.com/*"],
+        "css": ["vk_styles.css"]
+      }
+    ]
+  }
