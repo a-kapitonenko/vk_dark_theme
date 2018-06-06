@@ -47,3 +47,8 @@ body, .ts_input, .ts_input:focus  {
 .nim-dialog:not(.nim-dialog_deleted):hover {
     background: #474747 !important;
 }
+
+.im-page .im-page--history-new-bar,
+.im-page .im-page--history-new-bar span {
+    background-color: unset !important;
+}
