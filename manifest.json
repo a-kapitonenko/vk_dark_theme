@@ -6,7 +6,7 @@
     "content_scripts": [
       {
         "matches": ["*://vk.com/*"],
-        "css": ["vk_styles.css"]
+        "css": ["./dist/css/dark.css"]
       }
     ]
   }

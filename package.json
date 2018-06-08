@@ -1,0 +1,23 @@
+{
+  "name": "vk_dark_theme",
+  "version": "1.0.0",
+  "description": "Chrome extension for VK.",
+  "main": "vk_inject.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-kapitonenko/vk_dark_theme.git"
+  },
+  "author": "Artyom Kapitonenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-kapitonenko/vk_dark_theme/issues"
+  },
+  "homepage": "https://github.com/a-kapitonenko/vk_dark_theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

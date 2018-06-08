@@ -1,0 +1,34 @@
+//variables
+
+$bgcolor: #121212
+$nbcolor: #232323
+$textcolor: #D7D7D7
+
+//mixin ./dist/css/dark.css
+
+@mixin bcolor($color)
+    background-color: $color !important
+
+@mixin filter($grayscale, $brightness)
+    filter: grayscale($grayscale) brightness($brightness)
+
+//main
+
+body 
+    @include bcolor ($bgcolor) 
+
+//navbar
+
+.ts_input, .ts_input:focus
+    @include bcolor ($bgcolor)
+    color: #D7D7D7 !important
+
+.back 
+    @include bcolor ($nbcolor)
+    border: unset !important
+
+.input_back_content
+    color: $textcolor !important
+
+.top_nav_btn_icon 
+    @include filter(100%, 800%)
