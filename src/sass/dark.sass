@@ -1,34 +1,68 @@
 //variables
 
-$bgcolor: #121212
-$nbcolor: #232323
-$textcolor: #D7D7D7
+$BGColor: #121212
+$NBcolor: #232323
+$TextColor: #D7D7D7
+$InfoColor: #888888
+$ContColor: #242424
+$BContColor: #353535
+$ContColorFocus: #4C4C4C
 
 //mixin ./dist/css/dark.css
 
-@mixin bcolor($color)
-    background-color: $color !important
+@mixin bgcolor_color($bgc, $color)
+    background-color: $bgc !important
+    color: $color !important
 
 @mixin filter($grayscale, $brightness)
-    filter: grayscale($grayscale) brightness($brightness)
+    filter: grayscale($grayscale) brightness($brightness) !important
 
 //main
 
 body 
-    @include bcolor ($bgcolor) 
+   background-color: $BGColor !important 
 
 //navbar
 
-.ts_input, .ts_input:focus
-    @include bcolor ($bgcolor)
-    color: #D7D7D7 !important
-
 .back 
-    @include bcolor ($nbcolor)
+    background-color: $NBcolor !important
     border: unset !important
 
-.input_back_content
-    color: $textcolor !important
+.ts_wrap
+    .ts_input
+        @include filter(100%, 100%)
+        @include bgcolor_color ($BGColor, $TextColor)
+        &:focus
+            @include bgcolor_color ($BGColor, $TextColor)
+    .input_back_content
+        color: $TextColor !important
 
-.top_nav_btn_icon 
-    @include filter(100%, 800%)
+.ts_cont_wrap
+    background-color: $ContColor !important
+    a 
+        border-bottom: 1px solid $BContColor !important
+        &:nth-last-child(1)
+            border: unset !important
+        &:hover
+            background-color: $ContColorFocus !important
+    .ts_contact_title
+        color: $TextColor
+        font-weight: 500
+    .ts_contact_info
+        color: $InfoColor
+    .ts_contact_status
+        @include filter(100%, 500%)
+
+
+
+.top_nav_btn
+    border-radius: 15px
+    .top_nav_btn_icon
+        @include filter(100%, 500%)
+
+.top_audio_play__button
+    @include filter(100%, 500%)
+
+.top_notify_count
+    border: unset !important
+
